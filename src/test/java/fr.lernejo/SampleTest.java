@@ -19,9 +19,22 @@ class SampleTest {
     void tearDown() {
     }
 
-    @org.junit.jupiter.api.Test
-    void op() {
+    @Test
+    void op_add() {
+        int a=2;
+        int b=3;
+        int expectedResult = 5;
+        int result = sample.op(Sample.Operation.ADD, a, b);
+        Assertions.assertThat(result).isEqualTo(expectedResult);
+    }
 
+    @Test
+    void op_mult() {
+        int a=2;
+        int b=3;
+        int expectedResult = 6;
+        int result = sample.op(Sample.Operation.MULT, a, b);
+        Assertions.assertThat(result).isEqualTo(expectedResult);
     }
 
     @Test

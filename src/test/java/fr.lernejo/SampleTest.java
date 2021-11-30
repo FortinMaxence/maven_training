@@ -11,14 +11,6 @@ class SampleTest {
 
     private final Sample sample = new Sample();
 
-    @org.junit.jupiter.api.BeforeEach
-    void setUp() {
-    }
-
-    @org.junit.jupiter.api.AfterEach
-    void tearDown() {
-    }
-
     @Test
     void op_add() {
         int a=2;
@@ -58,3 +50,4 @@ class SampleTest {
         Assertions.assertThat(result).isEqualTo(expectedResult);
     }
 }
+
